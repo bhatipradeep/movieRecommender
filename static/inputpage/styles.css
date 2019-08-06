@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+
+
+#bg {
+  background-image: url("bg4.png");
+  height=100%;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_text{
+  text-align: center;
+  background: black;
+  color: white;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 50px;
+
+
+
+}
+
+
+.main_text span{
+  display: block;
+}
+
+.checked{
+
+  color: black;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .main_text{
+    font-size: 22px;
+
+  }
+}
+
+.items{
+/* display:inline-block; */
+width:200px;
+margin: 10px 10px 10px 10px;
+position: relative;
+text-align: center;
+}
+
+
+
+.posters{
+border-radius: 8px;
+width: 250px;
+height: 350px;
+border: 1px solid white;
+margin-top: 30px;
+}
+
+
+
+
+
+/* .movie_list{
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+
+
+}
+
+
+.movie_list_1{
+  display: inline-block;
+
+  width:200px;
+  margin: 30px 30px 30px 30px;
+  position: relative;
+  text-align: center;
+}
+
+.movie_list_2{
+  display: inline-block;
+  width:200px;
+  margin: 30px 30px 30px 30px;
+
+  position: relative;
+  text-align: center;
+}
+
+
+.movie_list_3{
+  display: inline-block;
+
+  width:200px;
+  margin: 30px 30px 30px 30px;
+  position: relative;
+  text-align: center;
+}
+
+.movie_list_4{
+  display:inline-block;
+
+  width:200px;
+  margin: 30px 30px 30px 30px;
+  position: relative;
+  text-align: center;
+}
+ */
+
+
+.movie_name{
+  color: white;
+  font-weight: 200;
+}
+
+
+.button-holder-1{
+  text-align: center;
+}
+
+
+.submit-button{
+
+  padding: 0px 10px 0px 10px;
+  background-color: Transparent;
+  color: #1f9cff;
+  border: 2px solid #1f9cff ; /* Green */
+  font-size: 30px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+
+.submit-button:hover{
+  background-color: gray;
+}
+
+
+/* .reset-button{
+  display: inline-block;
+  background-color: Transparent;
+  color: #1f9cff;
+  border: 2px solid #1f9cff ;
+  font-size: 30px;
+  border-radius: 8px;
+  font-weight: 200;
+  margin-top: 30px;
+  margin-right: 30px;
+
+}
+
+
+/* .reset-button:hover{
+  background-color: gray;
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .ratings{
+
+  transform: translate(-50%,-50%);
+  display: inline;
+}
+.ratings input[type='radio']{
+  display: none;
+}
+
+
+.ratings label{
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+
+}
+
+.ratings label:before{
+  content: '\f005';
+  font-family: fontAwesome;
+  display:  block;
+  position: relative;
+  font-size: 50px;
+  color: #101010;
+
+}
+
+
+
+.ratings label:after{
+  content: '\f005';
+  font-family: fontAwesome;
+  display: block;
+  position: relative;
+  font-size: 50px;
+  color: #1f9cff;
+  bottom: 60px;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.ratings label:hover:after,
+.ratings input:checked ~ label:after
+{
+  opacity: 1;
+} */

@@ -1,0 +1,250 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'outputpage/styles.css' %}"  >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body id="bg" >
+     <p class="main_text">BEST RECOMMENDATIONS FOR YOU</p>
+
+
+     <div class="container-fluid">
+
+       <div class="row">
+
+         <div class="col-sm-2">
+           <img class="posters" src="{{details.0.0}}" alt="">
+         </div>
+         <div class="col-sm-4">
+           <div class="items">
+             <h1 class='movie_name'>{{details.0.1}}</h1>
+
+               <p class="movie_details">Year: {{details.0.2}}</p>
+               <p class="movie_details">Director: {{details.0.3}}</p>
+               <p class="movie_details">Cast: {{details.0.4}}</p>
+               <p class="movie_details">Runtime: {{details.0.5}}</p>
+               <p class="movie_details">Plot: {{details.0.6}}</p>
+               <p class="movie_details">Language: {{details.0.7}}</p>
+
+           </div>
+         </div>
+
+           <div class="col-sm-2">
+             <img class="posters" src="{{details.1.0}}" alt="">
+           </div>
+           <div class="col-sm-4">
+             <div class="items">
+               <h1 class='movie_name'>{{details.1.1}}</h1>
+
+                 <p class="movie_details">Year: {{details.1.2}}</p>
+                 <p class="movie_details">Director: {{details.1.3}}</p>
+                 <p class="movie_details">Cast: {{details.1.4}}</p>
+                 <p class="movie_details">Runtime: {{details.1.5}}</p>
+                 <p class="movie_details">Plot: {{details.1.6}}</p>
+                 <p class="movie_details">Language: {{details.1.7}}</p>
+
+             </div>
+
+
+
+         </div>
+
+
+
+       </div>
+
+       <div class="row">
+
+         <div class="col-sm-2">
+           <img class="posters" src="{{details.2.0}}" alt="">
+         </div>
+         <div class="col-sm-4">
+           <div class="items">
+             <h1 class='movie_name'>{{details.2.1}}</h1>
+
+               <p class="movie_details">Year: {{details.2.2}}</p>
+               <p class="movie_details">Director: {{details.2.3}}</p>
+               <p class="movie_details">Cast: {{details.2.4}}</p>
+               <p class="movie_details">Runtime: {{details.2.5}}</p>
+               <p class="movie_details">Plot: {{details.2.6}}</p>
+               <p class="movie_details">Language: {{details.2.7}}</p>
+
+           </div>
+         </div>
+           <div class="col-sm-2">
+             <img class="posters" src="{{details.3.0}}" alt="">
+           </div>
+           <div class="col-sm-4">
+             <div class="items">
+               <h1 class='movie_name'>{{details.3.1}}</h1>
+
+                 <p class="movie_details">Year: {{details.3.2}}</p>
+                 <p class="movie_details">Director: {{details.3.3}}</p>
+                 <p class="movie_details">Cast: {{details.3.4}}</p>
+                 <p class="movie_details">Runtime: {{details.3.5}}</p>
+                 <p class="movie_details">Plot: {{details.3.6}}</p>
+                 <p class="movie_details">Language: {{details.3.7}}</p>
+
+             </div>
+
+
+
+         </div>
+
+
+
+       </div>
+
+       <div class="row">
+
+         <div class="col-sm-2">
+           <img class="posters" src="{{details.4.0}}" alt="">
+         </div>
+         <div class="col-sm-4">
+           <div class="items">
+             <h1 class='movie_name'>{{details.4.1}}</h1>
+
+               <p class="movie_details">Year: {{details.4.2}}</p>
+               <p class="movie_details">Director: {{details.4.3}}</p>
+               <p class="movie_details">Cast: {{details.4.4}}</p>
+               <p class="movie_details">Runtime: {{details.4.5}}</p>
+               <p class="movie_details">Plot: {{details.4.6}}</p>
+               <p class="movie_details">Language: {{details.4.7}}</p>
+
+           </div>
+         </div>
+
+           <div class="col-sm-2">
+             <img class="posters" src="{{details.0.0}}" alt="">
+           </div>
+           <div class="col-sm-4">
+             <div class="items">
+               <h1 class='movie_name'>{{details.5.1}}</h1>
+
+                 <p class="movie_details">Year: {{details.5.2}}</p>
+                 <p class="movie_details">Director: {{details.5.3}}</p>
+                 <p class="movie_details">Cast: {{details.5.4}}</p>
+                 <p class="movie_details">Runtime: {{details.5.5}}</p>
+                 <p class="movie_details">Plot: {{details.5.6}}</p>
+                 <p class="movie_details">Language: {{details.5.7}}</p>
+
+             </div>
+
+
+
+         </div>
+       </div>
+
+
+
+
+       <div class="row">
+
+         <div class="col-sm-2">
+           <img class="posters" src="{{details.6.0}}" alt="">
+         </div>
+         <div class="col-sm-4">
+           <div class="items">
+             <h1 class='movie_name'>{{details.6.1}}</h1>
+
+               <p class="movie_details">Year: {{details.6.2}}</p>
+               <p class="movie_details">Director: {{details.6.3}}</p>
+               <p class="movie_details">Cast: {{details.6.4}}</p>
+               <p class="movie_details">Runtime: {{details.6.5}}</p>
+               <p class="movie_details">Plot: {{details.6.6}}</p>
+               <p class="movie_details">Language: {{details.6.7}}</p>
+
+           </div>
+         </div>
+
+           <div class="col-sm-2">
+             <img class="posters" src="{{details.7.0}}" alt="">
+           </div>
+           <div class="col-sm-4">
+             <div class="items">
+               <h1 class='movie_name'>{{details.7.1}}</h1>
+
+                 <p class="movie_details">Year: {{details.7.2}}</p>
+                 <p class="movie_details">Director: {{details.7.3}}</p>
+                 <p class="movie_details">Cast: {{details.7.4}}</p>
+                 <p class="movie_details">Runtime: {{details.7.5}}</p>
+                 <p class="movie_details">Plot: {{details.7.6}}</p>
+                 <p class="movie_details">Language: {{details.7.7}}</p>
+
+             </div>
+
+
+
+         </div>
+
+       </div>
+
+       <div class="row">
+         {% if details.8.1 %}
+           <div class="col-sm-2">
+             <img class="posters" src="{{details.8.0}}" alt="">
+           </div>
+           <div class="col-sm-4">
+             <div class="items">
+               <h1 class='movie_name'>{{details.8.1}}</h1>
+
+                 <p class="movie_details">Year: {{details.8.2}}</p>
+                 <p class="movie_details">Director: {{details.8.3}}</p>
+                 <p class="movie_details">Cast: {{details.8.4}}</p>
+                 <p class="movie_details">Runtime: {{details.8.5}}</p>
+                 <p class="movie_details">Plot: {{details.8.6}}</p>
+                 <p class="movie_details">Language: {{details.8.7}}</p>
+
+             </div>
+           </div>
+          {% endif %}
+          {% if details.9.1 %}
+           <div class="col-sm-2">
+             <img class="posters" src="{{details.9.0}}" alt="">
+           </div>
+           <div class="col-sm-4">
+             <div class="items">
+               <h1 class='movie_name'>{{details.9.1}}</h1>
+
+                 <p class="movie_details">Year: {{details.9.2}}</p>
+                 <p class="movie_details">Director: {{details.9.3}}</p>
+                 <p class="movie_details">Cast: {{details.9.4}}</p>
+                 <p class="movie_details">Runtime: {{details.9.5}}</p>
+                 <p class="movie_details">Plot: {{details.9.6}}</p>
+                 <p class="movie_details">Language: {{details.9.7}}</p>
+
+             </div>
+
+
+
+         </div>
+         {% endif %}
+
+
+
+
+       </div>
+
+
+
+
+
+
+     </div>
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+Dataset :
+
+MovieLens dataset from groupLens.
+https://grouplens.org/datasets/movielens/
+
+Recommended for education and development
+ 
+MovieLens Latest Datasets
+These datasets will change over time, and are not appropriate for reporting research results. We will keep the download links stable for automated downloads. We will not archive or make available previously released versions.
+
+Full: 27,000,000 ratings and 1,100,000 tag applications applied to 58,000 movies by 280,000 users. Includes tag genome data with 14 million relevance scores across 1,100 tags. Last updated 9/2018.
+
+Dataset structure :
+
+Data will be available in raw form for which we perform data preprocessing.
+
+Raw data: (movies.csv)
+columns : movieId	title	genres
+
+PreProcessed Data:
+code: data_preparation.py
+columns : movieId	title	genres	year	Adventure	Animation	Children	Comedy	Fantasy	Romance	Drama	Action	Crime	Thriller	Horror	Mystery	Sci-Fi	IMAX	Documentary	War	Musical	Western	Film-Noir imdbId
+
+
+Note : This data has to placed in recommendationPage folder.
+

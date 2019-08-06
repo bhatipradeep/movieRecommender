@@ -1,0 +1,22 @@
+Movie Database (IMDB Alternative) API Overview:
+Link : https://rapidapi.com/imdb/api/movie-database-imdb-alternative/details
+RESTful web service to access information, pictures, and more from the movie database.
+
+Get Title, Year, Metascore Rating, IMDB rating, Release date, Runtime, Genre, Directors, Writers, Actors, Plot, Awards, Posters, IMDB ID, Type, DVD, Boxoffice, Production company, website and response data.
+
+
+Movie Database API
+Looking for a API to provide data on your favorite movies? Check out the IMDb Alternative API to help enrich your application. The API gets data from sources like IMDb and returns results in JSON or XML format. You can even search by IMDb ID to get similar results from the IMDb database. Check out the API endpoints to query different types of data including:
+
+lists of movie titles
+movie posters
+TV show episodes
+and much more!
+How do you integrate the IMDb API into your application?
+Sign up for a RapidAPI account
+Subscribe to a pricing plan (There's a free tier that offers 1000 requests/day).
+Return to the API documentation/endpoints page and select a programming language of your choice from the dropdown. The available choices include: node.js, PHP, Python, Ruby, Objective-C, Java (Android), C# (.NET), and cURL.
+Copy the code snippet and integrate it into your website, software or mobile application.
+How do you apply for an API key?
+When you sign up for a free RapidAPI user account, you will automatically be given an API key.
+

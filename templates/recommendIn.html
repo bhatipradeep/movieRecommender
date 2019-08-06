@@ -1,0 +1,363 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'inputpage/styles.css' %}"  >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  </head>
+  <body id="bg" >
+
+      <p class="main_text"> <span>Rate the movies for</span><span>better recommendations</span></p>
+
+
+
+
+
+
+    <div class="main_form">
+
+
+      <form id="movie_rating_form" method="post">
+        {% csrf_token %}
+
+
+        <div class="container-fluid">
+
+
+
+          <div class="row">
+
+            <div class="col-sm-3">
+            <div class="items">
+                <img src={{images.0}} class="posters"  alt="">
+                <h1 class="movie_name">{{movies.0}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_0" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_0" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_0" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_0" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_0" ></span>
+                <input type="hidden" id="movie_0" name="movie_0" value="">
+
+              </div>
+              </div>
+
+
+
+              <div class="col-sm-3">
+              <div class="items">
+
+                <img class="posters" src={{images.1}} alt=""  >
+                <h1 class="movie_name">{{movies.1}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_1" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_1" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_1" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_1" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_1" ></span>
+                <input type="hidden" id="movie_1" name="movie_1" value="">
+
+              </div>
+              </div>
+
+
+              <div class="col-sm-3">
+              <div class="items">
+
+                <img class="posters" src={{images.2}} alt=""  >
+                <h1 class="movie_name">{{movies.2}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_2" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_2" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_2" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_2" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_2" ></span>
+                <input type="hidden" id="movie_2" name="movie_2" value="">
+              </div>
+              </div>
+
+
+              <div class="col-sm-3">
+              <div class="items">
+                <img class="posters" src={{images.3}} alt=""  >
+                <h1 class="movie_name">{{movies.3}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_3" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_3" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_3" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_3" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_3" ></span>
+                <input type="hidden" id="movie_3" name="movie_3" value="">
+              </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-sm-3">
+                <div class="items">
+
+
+                <img class="posters" src={{images.4}} alt=""  >
+                <h1 class="movie_name">{{movies.4}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_4" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_4" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_4" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_4" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_4" ></span>
+                <input type="hidden" id="movie_4" name="movie_4" value="">
+              </div>
+              </div>
+
+              <div class="col-sm-3">
+              <div class="items">
+
+              <img class="posters" src={{images.5}} alt=""  >
+              <h1 class="movie_name">{{movies.5}}</h1>
+              <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_5" ></span>
+              <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_5" ></span>
+              <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_5" ></span>
+              <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_5" ></span>
+              <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_5" ></span>
+              <input type="hidden" id="movie_5" name="movie_5" value="">
+
+              </div>
+              </div>
+
+
+
+
+
+                <div class="col-sm-3">
+                <div class="items">
+                <img class="posters" src={{images.6}} alt=""  >
+                <h1 class="movie_name">{{movies.6}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_6" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_6" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_6" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_6" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_6" ></span>
+                <input type="hidden" id="movie_6" name="movie_6" value="">
+              </div>
+              </div>
+
+
+
+              <div class="col-sm-3">
+                 <div class="items">
+
+                <img class="posters" src={{images.7}} alt=""  >
+                <h1 class="movie_name">{{movies.7}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_7" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_7" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_7" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_7" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_7" ></span>
+                <input type="hidden" id="movie_7" name="movie_7" value="">
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-sm-3">
+                   <div class="items">
+
+                <img class="posters" src={{images.8}} alt=""  >
+                <h1 class="movie_name">{{movies.8}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_8" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_8" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_8" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_8" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_8" ></span>
+                <input type="hidden" id="movie_8" name="movie_8" value="">
+                </div>
+              </div>
+
+                <div class="col-sm-3">
+                   <div class="items">
+                <img class="posters" src={{images.9}} alt=""  >
+                <h1 class="movie_name">{{movies.9}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_9" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_9" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_9" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_9" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_9" ></span>
+                <input type="hidden" id="movie_9" name="movie_9" value="">
+              </div>
+              </div>
+
+                <div class="col-sm-3">
+                  <div class="items">
+
+                <img class="posters" src={{images.10}} alt=""  >
+                <h1 class="movie_name">{{movies.10}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_10" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_10" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_10" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_10" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_10" ></span>
+                <input type="hidden" id="movie_10" name="movie_10" value="">
+
+                </div>
+              </div>
+
+                <div class="col-sm-3">
+                   <div class="items">
+
+                <img class="posters" src={{images.11}} alt=""  >
+                <h1 class="movie_name">{{movies.11}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_11" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_11" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_11" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_11" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_11" ></span>
+                <input type="hidden" id="movie_11" name="movie_11" value="">
+                </div>
+
+                </div>
+              </div>
+
+
+                <div class="row">
+
+                <div class="col-sm-3">
+                   <div class="items">
+
+                <img class="posters" src={{images.12}} alt=""  >
+                <h1 class="movie_name">{{movies.12}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_12" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_12" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_12" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_12" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_12" ></span>
+                <input type="hidden" id="movie_12" name="movie_12" value="">
+                </div>
+              </div>
+
+
+              <div class="col-sm-3">
+                <div class="items">
+                <img class="posters" src={{images.13}} alt=""  >
+                <h1 class="movie_name">{{movies.13}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_13" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_13" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_13" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_13" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_13" ></span>
+                <input type="hidden" id="movie_13" name="movie_13" value="">
+
+                </div>
+              </div>
+
+
+              <div class="col-sm-3">
+                <div class="items">
+
+                <img class="posters" src={{images.14}} alt=""  >
+                <h1 class="movie_name">{{movies.14}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_14" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_14" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_14" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_14" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_14" ></span>
+                <input type="hidden" id="movie_14" name="movie_14" value="">
+
+              </div>
+              </div>
+
+
+              <div class="col-sm-3">
+                <div class="items">
+
+                <img class="posters" src={{images.15}} alt=""  >
+                <h1 class="movie_name">{{movies.15}}</h1>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="1movie_15" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="2movie_15" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="3movie_15" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="4movie_15" ></span>
+                <span class="fa fa-star checked" onmouseover="starmark(this)" onclick="rating_record(this)" style="font-size:30px;cursor:pointer;" id="5movie_15" ></span>
+                <input type="hidden" id="movie_15" name="movie_15" value="">
+
+
+              </div>
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+
+          <div class="button-holder-1">
+            <input  class="submit-button"type="submit" value="NEXT">
+          </div>
+
+
+
+      </form>
+
+
+    </div>
+
+    <!-- <div class="button-holder-2">
+
+      <input  class="reset-button" onclick="resetfunct(this)" type="reset" value="RESET">
+
+    </div> -->
+
+
+
+  </body>
+
+  <!-- for 5 stars rating input -->
+  <script type="text/javascript">
+  dict={};
+  var rating="";
+  function starmark(item)
+  {
+    var count=item.id[0];
+    rating=count;
+    var subid = item.id.substring(1);
+    for(var i=0;i<5;i++)
+    {
+      if (i<count)
+      {
+        document.getElementById((i+1)+subid).style.color='#1f9cff';
+      }
+      else
+      {
+        document.getElementById((i+1)+subid).style.color='black';
+      }
+    }
+    if (count==1)
+    {
+      document.getElementById("1"+subid).style.color='black';
+    }
+
+
+
+  }
+  function rating_record(item)
+  {
+      movie_id=item.id.substring(1);
+      rate=item.id[0];
+      document.getElementById(movie_id).value = rate;
+
+  }
+
+
+  </script>
+</html>
