@@ -38,24 +38,10 @@ def input(request):
 
     if request.method=='POST':
         dict={}
-        dict[movie_names[0]] = request.POST.get("movie_0")
-        dict[movie_names[1]] = request.POST.get("movie_1")
-        dict[movie_names[2]] = request.POST.get("movie_2")
-        dict[movie_names[3]] = request.POST.get("movie_3")
-        dict[movie_names[4]] = request.POST.get("movie_4")
-        dict[movie_names[5]] = request.POST.get("movie_5")
-        dict[movie_names[6]] = request.POST.get("movie_6")
-        dict[movie_names[7]] = request.POST.get("movie_7")
-        dict[movie_names[8]] = request.POST.get("movie_8")
-        dict[movie_names[9]] = request.POST.get("movie_9")
-        dict[movie_names[10]] = request.POST.get("movie_10")
-        dict[movie_names[11]] = request.POST.get("movie_11")
-        dict[movie_names[12]] = request.POST.get("movie_12")
-        dict[movie_names[13]] = request.POST.get("movie_13")
-        dict[movie_names[14]] = request.POST.get("movie_14")
-        dict[movie_names[15]] = request.POST.get("movie_15")
-
-
+        #getting the ratings
+        for i in range(16):
+           dict[movie_names[i]] = request.POST.get("movie_"+str(i))
+       
         input_movies={}
         #transfering only rated movies to input_movies
         for k in dict.keys():
@@ -68,11 +54,5 @@ def input(request):
         #sending to out main program
         rmovies=mainP(input_movies)
         return render(request,'recommendOut.html',{'details':rmovies})
-
-
-
-
-
-
 
     return render(request,'recommendIn.html',{'images': img,'movies': movie_names })
